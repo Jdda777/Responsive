@@ -1,0 +1,55 @@
+.externo{
+    display: flex;
+    justify-content: center; /* Centra el div hijo horizontalmente */
+    align-items: center; /* Centra el div hijo verticalmente */
+    width: 50vw; /* Ancho del div contenedor */
+    height: 75vh; /* Altura del div contenedor */
+    background-color: lightblue; /* Color de fondo del div contenedor */
+    border: 0.5vw solid black;
+}
+.medio{
+    display: flex;
+    justify-content: center; /* Centra el div hijo horizontalmente */
+    align-items: center;
+    width: 33vw; /* Ancho del div hijo */
+    height: 50vh; /* Altura del div hijo */
+    background-color: lightcoral; /* Color de fondo del div hijo */
+}
+
+.interno{
+    width: 15vw; /* Ancho del div hijo */
+    height: 25vh; /* Altura del div hijo */
+    background-color: rgb(128, 240, 139); /* Color de fondo del div hijo */
+}
+.centrado{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+@media (max-width:720px) {
+    .externo{
+        background-color: lightcoral;
+    }
+    .medio{
+        background-color: rgb(128, 240, 139);
+    }
+    .interno{
+        background-color: lightblue;
+    }
+    
+}
+
+@media (max-width:400px) {
+    .externo{
+        background-color: rgb(128, 240, 139);;
+    }
+    .medio{
+        background-color: lightblue;
+    }
+    .interno{
+        background-color: lightcoral;
+    }
+    
+}
