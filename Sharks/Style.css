@@ -1,0 +1,57 @@
+/* Estilo común para todos los dispositivos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 15px 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.box {
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #2980B9;
+    max-width: 600px;
+    background-color: #B3C6E2;
+}
+
+.imagen{
+    display: none;
+    justify-content: center;
+    border: 2px solid #2C3E50;
+}
+
+/* Estilo para tablets */
+@media (max-width: 720px) {
+    .box {
+        background-color: #b3e2cb;
+        font-size: 16px;
+    }
+}
+
+/* Estilo para móviles */
+@media (max-width: 480px) {
+    .imagen{display: flex;}
+    .box {
+        display: none;
+        background-color: #EAF1F8;
+        font-size: 16px;
+    }
+
+    section h2, section h3 {
+        font-size: 18px;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+}
